@@ -1,0 +1,15 @@
+
+
+#En la sección de proyectos solo voy a dejar los proyectos mas destacados con una breve descripcion y un boton a su explicación en detalle
+#Añadiré un boton que dirija a una página con todos los proyectos tratados en profundidad.
+#Para la página con todos los proyectos usar multiverse
+
+#Añadir boton de la playstore para renegade chase
+
+#Paleta de color web
+#ffffff blanco (fondo)
+#7d8ca3 gris (letras)
+#30343f gris oscuro (encabezados)
+#0dbf6f (verde)
+#006494 (azul)
+#d63230 (rojo)
