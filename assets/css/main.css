@@ -80,6 +80,10 @@ input, select, textarea {
 	body {
 		-ms-overflow-style: scrollbar;
 	}
+	body::-webkit-scrollbar {
+		display: none;
+	}
+	
 
 	@media screen and (max-width: 480px) {
 
@@ -3899,13 +3903,14 @@ input, select, textarea {
 
 /* Intro */
 
+
 	#intro { /*background image */
 		background-attachment: fixed;
-		background-image: url("images/pic01.jpg"); /*gif hecho en blender*/
+		background-image: url("images/pic01.jpg"); 
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
+	} 
 
 
 		#intro p { /*tamaño de fuente intro*/
@@ -3941,14 +3946,16 @@ input, select, textarea {
 
 /* Video*/
 video{
-	position:absolute;
+	position:fixed;
 	object-fit: cover;
   	height: 100%;
   	width: 100%;
-	top: 0;
-	right: 0;
+	top: 2px;
+	right: 2px;
+	overflow: hidden;
 
 }
+
 
 /*Barras de nivel*/
 
