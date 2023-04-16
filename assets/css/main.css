@@ -2575,12 +2575,16 @@ input, select, textarea {
 		.image.avatar {
 		border-radius: 100%;
 		overflow: hidden;
+		width: 80%;
+		height: 80%;
+		margin-left: 30px;
 		}
 
 			.image.avatar img {
 			border-radius: 100%;
 			display: block;
 			width: 100%;
+	
 			}
 
 		.image img {

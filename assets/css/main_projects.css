@@ -3142,20 +3142,6 @@ input, select, textarea {
 
 		}
 
-		.titulo h1{ /*Animacion titulo*/
-			-moz-transition: opacity 1s ease;
-			-webkit-transition: opacity 1s ease;
-			-ms-transition: opacity 1s ease;
-			transition: opacity 1s ease;
-			background: #ffffff; /*transicion imagen proyectos*/
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
+
 	
 
