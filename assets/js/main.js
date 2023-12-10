@@ -187,6 +187,100 @@
 				}
 			});
 
+	// event timeline
+		$('.spotlights > .timeline ')
+		.scrollex({
+			mode: 'middle',
+			top: '-10vh',
+			bottom: '-10vh',
+			initialize: function() {
+
+				// Deactivate section.
+					$(this).addClass('inactive');
+
+			},
+			enter: function() {
+
+				// Activate section.
+					$(this).removeClass('inactive');
+
+			}
+		})
+	// event timeline__component.
+		$('.spotlights > .timeline > .timeline__component')
+			.scrollex({
+				mode: 'middle',
+				top: '-10vh',
+				bottom: '-10vh',
+				initialize: function() {
+
+					// Deactivate section.
+						$(this).addClass('inactive');
+
+				},
+				enter: function() {
+
+					// Activate section.
+						$(this).removeClass('inactive');
+
+				}
+			})
+			.each(function() {
+
+				var	$this = $(this),
+					$image = $this.find('.image'),
+					$img = $image.find('img'),
+					x;
+
+				// Assign image.
+					$image.css('background-image', 'url(' + $img.attr('src') + ')');
+
+				// Set background position.
+					if (x = $img.data('position'))
+						$image.css('background-position', x);
+
+				// Hide <img>.
+					$img.hide();
+
+			});
+	// event timeline__point.
+		$('.spotlights > .timeline > .timeline__middle > .timeline__point')
+			.scrollex({
+				mode: 'middle',
+				top: '-10vh',
+				bottom: '-10vh',
+				initialize: function() {
+
+					// Deactivate section.
+						$(this).addClass('inactive');
+
+				},
+				enter: function() {
+
+					// Activate section.
+						$(this).removeClass('inactive');
+
+				}
+			})
+			.each(function() {
+
+				var	$this = $(this),
+					$image = $this.find('.image'),
+					$img = $image.find('img'),
+					x;
+
+				// Assign image.
+					$image.css('background-image', 'url(' + $img.attr('src') + ')');
+
+				// Set background position.
+					if (x = $img.data('position'))
+						$image.css('background-position', x);
+
+				// Hide <img>.
+					$img.hide();
+
+			});
+
 })(jQuery);
 
 const observer = new IntersectionObserver(entries => {
